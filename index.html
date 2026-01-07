@@ -875,7 +875,7 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
               <!-- <div class="g-recaptcha" data-sitekey="6LcNjqMrAAAAAP4VbSI5Xsks0low9_8fJug0Twnl"></div> -->  <!-- replace with your recaptcha SITE key not secret key -->
-              <input type="hidden" name="_next" value="https://devbabul.github.io/thank_you.html">
+              <input type="hidden" name="_next" value="../Thankyou/index.html">
             </form>
           </div>
         </div>
@@ -944,7 +944,7 @@
 
             if (res.ok) {
               // Aapka custom page:
-              window.location.href = 'https://devbabul.github.io/thank_you.html';
+              window.location.href = '../Thankyou/index.html';
             } else {
               const data = await res.json().catch(() => ({}));
               const msg = (data.errors && data.errors.map(e => e.message).join(', ')) || 'Submission failed. Please try again.';
@@ -962,5 +962,6 @@
 </body>
 
 </html>
+
 
 
